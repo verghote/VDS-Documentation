@@ -1,0 +1,39 @@
+<div class='formulaire' style="width: 42rem;">
+    <label class='col-form-label' for="nom">Nom </label>
+    <input type="text"
+           id='nom'
+           class="form-control"
+           required
+           minlength="3"
+           maxlength="50"
+           pattern="^[0-9A-Za-zÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ](?:[' \-]?[0-9A-Za-zÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ])*$">
+    <label for="url" class="col-form-label">Url du lien </label>
+    <input id="url"
+           type='url'
+           class="form-control"
+           required
+           maxlength="150"
+           autocomplete="off">
+    <label for="fichier" class="col-form-label">Logo</label>
+    <p class="aide">Formats acceptés : png, jpg, webp, avif. Dimension maximale : 300 * 150</p>
+    <div id="cible" class="upload" style="width: 300px; height: 150px">
+        <div class="content">
+            <i class="bi bi-download" style="font-size: 1rem; color: #8b8a8a;"></i>
+            <div style="font-size: 0.8rem; ">Cliquer ou faire glisser la nouvelle photo ici</div>
+        </div>
+    </div>
+    <div id="nomFichier" style="padding-left : 5px; font-size: 0.8rem "></div>
+    <input type="file" id="fichier" accept="" style='display: none '>
+    <div class="d-flex justify-content-evenly">
+        <button id="btnAjouter" class="btn btn-danger mt-3">Ajouter</button>
+        <a href="index.php" class="btn btn-secondary mt-3">
+            <i class="bi bi-arrow-90deg-up"></i>
+            Annuler
+        </a>
+    </div>
+    <div class="alert alert-warning mt-3" role="alert">
+        Si le logo ne respecte pas les dimensions, vous pouvez l'ajuster en utilisant le site suivant :
+        <a href="https://resizeyourimage.com/FR/">resizeyourimage</a>
+    </div>
+</div>
+
